@@ -3,17 +3,81 @@
 <head>
     <title>WEB1 - html</title> 
     <meta charset="utf-8">
+    <style>
+        body{
+            margin:0;
+        }
+        a {
+        color: black;
+        text-decoration: none;
+       } 
+       #active{color: red;
+       }
+        
+        h1{
+            font-size: 45px;
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        ol{border-right:1px solid gray;
+            width: 100px;
+            margin:0;
+            padding:20px;
+            
+        }
+        #grid {
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid ol{
+                padding-left: 33px;}
+        #article{padding: 25px;
+        }
+
+    @media(max-width:800px){
+        #grid{
+            display: block;
+        }
+            ol{
+                border-right:none;
+            }
+            h1{
+                border-bottom:none;
+            }
+        }
+        
+        @font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+.p1{font-family: 'TTWanjudaedunsancheB';}
+    </style>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <h1><a href="index.html">PLAN</a></h1>
+    <div id="grid">
     <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="1.html">MUSIC</a></li>
+        <li><a href="2.html">PLAN</a></li>
+        <li><a href="3.html">WITH SIWON</a></li>
     </ol>
-    <h2>CSS</h2>
-    <p><a href="https://www.w3.org/" target="_blank" title="html5 specicification">Hypertext Markup Language(HTML)</a> is the standard markup language for <strong>creating web pages</strong> and <u>web</u> applications</p>
-    <p><img src="coding.jpg" width="50%"></p>
-    <p style="margin-top: 45px;">CCS입니다!!</p> 
+    <div id="article"> 
+        <h2 class="p1">THIS IS MY PLAN</h2>
+        <p class="p1"><u>해보고 싶은 일!</u></a>
+        </p>
+        <p><img src="로드맵.png" width="80%"></p>
+        <p style="margin-top: 45px;"></p>
+        <p class="p1" >요즘 관심사! </p>
+        <p class="p1">Click Here<a style=color:red 
+            href="https://www.29cm.co.kr/home/" target="_blank" title="html5 specicification"> "FASHION"</a> 
+         <p class="p1">Click here!<a style=color:blue      href="https://seomal.com/map/1/285"     target="_blank" title="html5specicification"> "CODING"</a></p> 
+    </div>
+</div>
 </body>
 </html>
